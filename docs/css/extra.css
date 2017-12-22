@@ -1,0 +1,33 @@
+body {
+  font-family: NanumGhothic, '나눔고딕', 'Malgun Gothic', '맑은고딕';
+}
+
+code,
+kbd,
+pre {
+  font-family: "Monaco", "D2Coding", "Roboto Mono", "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 40px;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  margin-top: 4rem;
+}
+
+.wy-nav-content {
+  max-width: 1200px;
+  padding-left: 2em;
+  padding-right: 2em;
+}

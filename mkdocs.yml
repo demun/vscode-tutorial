@@ -1,0 +1,20 @@
+site_name: Visual Studio Code tutorial
+
+pages: 
+  - 시작: index.md
+  - 단축키: 01.shortcuts.md
+
+
+theme: readthedocs
+
+extra_css:
+    - css/extra.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - meta
+  - codehilite: 
+      linenums: true
+  - toc:
+      permalink: true
