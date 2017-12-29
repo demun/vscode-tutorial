@@ -31,3 +31,7 @@ h6 {
   padding-left: 2em;
   padding-right: 2em;
 }
+
+.rst-content .section .docutils {
+  display: table;
+}

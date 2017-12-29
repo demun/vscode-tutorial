@@ -2,8 +2,10 @@ site_name: Visual Studio Code tutorial
 
 pages: 
   - 시작: index.md
-  - 단축키: 01.shortcuts.md
-  - 가이드: 02.guide.md
+  - 단축키: shortcuts.md
+  - Git: git.md
+  - Debug: debug.md
+  - Task: task.md
 
 
 theme: readthedocs
