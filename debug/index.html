@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Debug - Visual Studio Code tutorial</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Debug";
+    var mkdocs_page_input_path = "debug.md";
+    var mkdocs_page_url = "/debug/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Visual Studio Code tutorial</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">시작</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../shortcuts/">단축키</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Debug</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#vscode-debugging">vscode debugging</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#launchjson">launch.json</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../task/">Task</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Visual Studio Code tutorial</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Debug</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="vscode-debugging">vscode debugging<a class="headerlink" href="#vscode-debugging" title="Permanent link">&para;</a></h1>
+<p>vscode 에서 디버깅은 핵심기능중 하나입니다.</p>
+<p>vscode 에는 node.js 런타임에 대한 디버깅 지원기능이 내장되어 있어 JavaScript, TypeScript 및 JavaScript로 변환된 다른 언어를 디버깅 할 수 있습니다.
+그러기에 기본적으로 디버깅은 하려면 <a href="https://nodejs.org">nodejs</a> 를 설치해야 합니다.</p>
+<p>다른 언어에 대해서는 확장기능을 설치해서 이용이 가능합니다.</p>
+<p><img alt="디버깅" src="../img/0046.jpg" /></p>
+<p>vscode 폴더에 wecome.js 라는 자바스크립트 코드를 하나 만들고 디버깅을 해봅니다.</p>
+<p><img alt="디버깅" src="../img/0046.gif" /></p>
+<p>고급 디버깅을 하려면 환경설정을 해줘야 합니다.  상단에 'launch.json' 구성을 클릭하면 디버깅 환경설정파일이 생성됩니다.</p>
+<p>'launch.json' 파일은 '.vscode' 폴더에 생성됩니다.</p>
+<p><img alt="디버깅" src="../img/0047.gif" /></p>
+<p>'launch.json' 의 구성에서 이름을 알기 쉽게 변경해봅니다.</p>
+<p>디버깅을 클릭하면 변경한 js 디버깅이라는 이름으로 변경되어 있습니다. </p>
+<p>중단점을 설정하고 디버깅시작을 하면 디버깅 작업창이 뜹니다.</p>
+<ul>
+<li>계속/일시중지 F5</li>
+<li>단위실행 F10</li>
+<li>단계정보 F11</li>
+<li>단계출력 shift+F11 </li>
+<li>다시시작 ctrl+shift+F5</li>
+<li>중지 shift+F5</li>
+</ul>
+<p><img alt="디버깅" src="../img/0048.gif" /></p>
+<h2 id="launchjson">launch.json<a class="headerlink" href="#launchjson" title="Permanent link">&para;</a></h2>
+<p>다음 속성은 실행구성에 필수 요소입니다.</p>
+<ul>
+<li><code>type</code> : 실행구성에 사용할 디버거 유형(node, php, python..등)</li>
+<li><code>request</code> : 실행구성의 요청유형 현재는 'launch', 'attach` 입니다.</li>
+<li><code>name</code> : 디버그 드롭다운에 나타나는 디버그 런치 이름</li>
+</ul>
+<p>다음은 실행구성에서 사용할수 있는 선택적 속성입니다.</p>
+<ul>
+<li><code>preLaunchTask</code> : 디버그 세션이 시작되기 전에 작업을 시작하려면 이 속성을 tasks.json 에 지정된 이름으로 설정해야합니다.</li>
+<li><code>internalConsoleOptions</code> : 디버깅 세션동안 다버그 콘솔 패널의 가시성을 제어합니다.</li>
+<li><code>debugServer</code> : 디버그를 시작하는 대신 지정 포트에 연결합니다.</li>
+</ul>
+<p>많은 디버거가 다음 속성 중 일부를 지원합니다.</p>
+<ul>
+<li><code>program</code> : 디버거를 시작할 때 실행할 실행 파일 또는 파일</li>
+<li><code>args</code>: 디버깅 할 프로그램에 전달된 인수</li>
+<li><code>env</code>: 환경 변수</li>
+<li><code>cwd</code>: 의존성 및 기타 파일을 찾기위한 현재 작업 디렉토리</li>
+<li><code>port</code>: 실행중인 프로세스에 연결할 때의 포트</li>
+<li><code>stopOnEntry</code>: 프로그램이 시작되면 즉시 중단</li>
+<li><code>console</code>: 어떤 종류를 콘솔을 사용할지 지정. 예를 들어 internalConsole, integratedTerminal, externalTerminal.</li>
+</ul>
+<p>vscode는 문자열 내부의 변수 대체를 지원 launch.json하며 다음과 같이 미리 정의 된 변수가 있습니다.</p>
+<ul>
+<li><code>${workspaceFolder}</code> : vscode에서 연 폴더의 경로</li>
+<li><code>${workspaceFolderBasename}</code> : vscode에서 슬래시없이 열리는 폴더 이름 (/)</li>
+<li><code>${file}</code> : 현재 열려있는 파일</li>
+<li><code>${relativeFile}</code> : workspaceFolder 에서 현재 열린 파일</li>
+<li><code>${fileBasename}</code> : 현재 열려있는 파일의 기본 이름</li>
+<li><code>${fileBasenameNoExtension}</code> : 파일 확장명이 없는 현재 열린 파일의 기본 이름</li>
+<li><code>${fileDirname}</code> : 현재 열려있는 파일의 디렉토리 이름</li>
+<li><code>${fileExtname}</code> : 현재 열려있는 파일의 확장자</li>
+<li><code>${cwd}</code> : 시작시 태스크 러너의 현재 작업 디렉토리</li>
+<li><code>${lineNumber}</code> : 활성 파일에서 현재 선택된 행 번호</li>
+</ul>
+<p>참고: https://code.visualstudio.com/docs/editor/debugging</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../task/" class="btn btn-neutral float-right" title="Task">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../git/" class="btn btn-neutral" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../git/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../task/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
