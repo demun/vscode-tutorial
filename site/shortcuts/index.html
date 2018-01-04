@@ -53,11 +53,6 @@
     <a class="" href="..">시작</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../guide/">가이드</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">단축키</a>
@@ -69,11 +64,11 @@
         
             <li><a class="toctree-l3" href="#_2">기본 편집</a></li>
         
-            <li><a class="toctree-l3" href="#_3">풍부한 언어 편집</a></li>
+            <li><a class="toctree-l3" href="#_3">언어 편집</a></li>
         
-            <li><a class="toctree-l3" href="#_4">항해</a></li>
+            <li><a class="toctree-l3" href="#_4">네비게이션</a></li>
         
-            <li><a class="toctree-l3" href="#_5">편집자 창 관리</a></li>
+            <li><a class="toctree-l3" href="#_5">에디터/윈도우 관리</a></li>
         
             <li><a class="toctree-l3" href="#_6">파일 관리</a></li>
         
@@ -85,12 +80,29 @@
         
             <li><a class="toctree-l3" href="#_10">디버그</a></li>
         
-            <li><a class="toctree-l3" href="#_11">할 일 목록</a></li>
+            <li><a class="toctree-l3" href="#_11">작업주자 목록</a></li>
+        
+            <li><a class="toctree-l3" href="#_12">확장 프로그램</a></li>
         
         </ul>
     
 
     </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../debug/">Debug</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../task/">Task</a>
 	    </li>
           
         </ul>
@@ -154,37 +166,37 @@
 </tr>
 <tr>
 <td>ctrl+Enter</td>
-<td>아래에 선 삽입</td>
+<td>아래에 행 삽입</td>
 <td>editor.action.insertLineAfter</td>
 </tr>
 <tr>
 <td>ctrl+shift+Enter</td>
-<td>위의 선 삽입</td>
+<td>위에 행 삽입</td>
 <td>editor.action.insertLineBefore</td>
 </tr>
 <tr>
 <td>alt+Down</td>
-<td>줄을 아래로 이동</td>
+<td>행을 아래로 이동</td>
 <td>editor.action.moveLinesDownAction</td>
 </tr>
 <tr>
 <td>alt+Up</td>
-<td>라인 이동</td>
+<td>행을 위로 이동</td>
 <td>editor.action.moveLinesUpAction</td>
 </tr>
 <tr>
 <td>shift+alt+Down</td>
-<td>줄 바꿈 복사</td>
+<td>위에 행 복사 추가</td>
 <td>editor.action.copyLinesDownAction</td>
 </tr>
 <tr>
 <td>shift+alt+Up</td>
-<td>라인 복사</td>
+<td>아래에 행 복사 추가</td>
 <td>editor.action.copyLinesUpAction</td>
 </tr>
 <tr>
 <td>ctrl+d</td>
-<td>다음 찾기 일치에 선택 추가</td>
+<td>다음 선택 찾기</td>
 <td>editor.action.addSelectionToNextFindMatch</td>
 </tr>
 <tr>
@@ -204,7 +216,7 @@
 </tr>
 <tr>
 <td>ctrl+shift+l</td>
-<td>현재 선택 항목을 모두 선택하십시오.</td>
+<td>현재 선택 항목을 모두 선택</td>
 <td>editor.action.selectHighlights</td>
 </tr>
 <tr>
@@ -219,12 +231,12 @@
 </tr>
 <tr>
 <td>ctrl+alt+Down</td>
-<td>커서를 아래에 삽입하십시오.</td>
+<td>커서를 아래에 추가</td>
 <td>editor.action.insertCursorBelow</td>
 </tr>
 <tr>
 <td>ctrl+alt+Up</td>
-<td>위의 커서 삽입</td>
+<td>커서를 위에 추가</td>
 <td>editor.action.insertCursorAbove</td>
 </tr>
 <tr>
@@ -234,17 +246,17 @@
 </tr>
 <tr>
 <td>ctrl +]</td>
-<td>들여 쓰기 라인</td>
+<td>라인 들여쓰기</td>
 <td>editor.action.indentLines</td>
 </tr>
 <tr>
 <td>ctrl+[</td>
-<td>Outdent Line</td>
+<td>라인 내어쓰기</td>
 <td>editor.action.outdentLines</td>
 </tr>
 <tr>
 <td>Home</td>
-<td>라인의 시작으로 이동</td>
+<td>행의 시작으로 이동</td>
 <td>cursorHome</td>
 </tr>
 <tr>
@@ -259,7 +271,7 @@
 </tr>
 <tr>
 <td>ctrl+Home</td>
-<td>파일의 시작으로 이동</td>
+<td>파일 시작으로 이동</td>
 <td>cursorTop</td>
 </tr>
 <tr>
@@ -269,7 +281,7 @@
 </tr>
 <tr>
 <td>ctrl+Up</td>
-<td>스크롤 라인 업</td>
+<td>스크롤 업</td>
 <td>scrollLineUp</td>
 </tr>
 <tr>
@@ -284,37 +296,37 @@
 </tr>
 <tr>
 <td>ctrl+shift+[</td>
-<td>접기 (접기) 영역</td>
+<td>영역 접기</td>
 <td>editor.fold</td>
 </tr>
 <tr>
-<td>ctrl+shift +]</td>
-<td>펼치기 (펼친 곳) 영역</td>
+<td>ctrl+shift+]</td>
+<td>영역 펼치기</td>
 <td>editor.unfold</td>
 </tr>
 <tr>
 <td>ctrl+K ctrl+[</td>
-<td>모든 하위 지역 접기 (접기)</td>
+<td>모든 하위 영역 접기</td>
 <td>editor.foldRecursively</td>
 </tr>
 <tr>
-<td>ctrl+K ctrl +]</td>
-<td>모든 소구역 펼치기 (펼치기 해제)</td>
+<td>ctrl+K ctrl+]</td>
+<td>모든 상위 영역 펼치기</td>
 <td>editor.unfoldRecursively</td>
 </tr>
 <tr>
 <td>ctrl+K ctrl+0</td>
-<td>모든 지역 접기 (접기)</td>
+<td>모든 영역 접기</td>
 <td>editor.foldAll</td>
 </tr>
 <tr>
 <td>ctrl+K ctrl+j</td>
-<td>모든 지역 펼치기 (펼치기 해제)</td>
+<td>모든 영역 펼치기</td>
 <td>editor.unfoldAll</td>
 </tr>
 <tr>
 <td>ctrl+K ctrl+c</td>
-<td>줄 주석 추가</td>
+<td>행 주석 추가</td>
 <td>editor.action.addCommentLine</td>
 </tr>
 <tr>
@@ -324,12 +336,12 @@
 </tr>
 <tr>
 <td>ctrl+/</td>
-<td>토글 라인 코멘트</td>
+<td>주석 토글</td>
 <td>editor.action.commentLine</td>
 </tr>
 <tr>
 <td>shift+alt+a</td>
-<td>차단 댓글 토글</td>
+<td>커서위치에 주석 토글</td>
 <td>editor.action.blockComment</td>
 </tr>
 <tr>
@@ -354,7 +366,7 @@
 </tr>
 <tr>
 <td>alt+Enter</td>
-<td>모든 일치 항목을 선택하십시오.</td>
+<td>모든 일치 항목을 선택</td>
 <td>editor.action.selectAllMatches</td>
 </tr>
 <tr>
@@ -378,7 +390,7 @@
 <td>editor.action.toggleTabFocusMode</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>렌더링 공백을 토글합니다.</td>
 <td>toggleRenderWhitespace</td>
 </tr>
@@ -389,7 +401,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_3">풍부한 언어 편집<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">언어 편집<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -400,12 +412,12 @@
 </thead>
 <tbody>
 <tr>
-<td>ctrl+스페이스</td>
+<td>ctrl+스페이스바</td>
 <td>트리거 제안</td>
 <td>editor.action.triggerSuggest</td>
 </tr>
 <tr>
-<td>ctrl+shift+스페이스</td>
+<td>ctrl+shift+스페이스바</td>
 <td>트리거 매개 변수 힌트</td>
 <td>editor.action.triggerParameterHints</td>
 </tr>
@@ -431,12 +443,12 @@
 </tr>
 <tr>
 <td>alt+F12</td>
-<td>픽 정의</td>
+<td>키워드 정의</td>
 <td>editor.action.previewDeclaration</td>
 </tr>
 <tr>
 <td>ctrl+k F12</td>
-<td>측면 정의 열기</td>
+<td>키워드 정의 우측에 열기</td>
 <td>editor.action.openDeclarationToTheSide</td>
 </tr>
 <tr>
@@ -466,17 +478,17 @@
 </tr>
 <tr>
 <td>shift+alt+오른쪽</td>
-<td>AST 선택 확장</td>
+<td>선택 확장</td>
 <td>editor.action.smartSelect.grow</td>
 </tr>
 <tr>
 <td>shift+alt+왼쪽</td>
-<td>축소 AST 선택</td>
+<td>선택 축소</td>
 <td>editor.action.smartSelect.shrink</td>
 </tr>
 <tr>
 <td>ctrl+k ctrl+x</td>
-<td>트림 공백 제거</td>
+<td>공백 제거</td>
 <td>editor.action.trimTrailingWhitespace</td>
 </tr>
 <tr>
@@ -486,7 +498,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">항해<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_4">네비게이션<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -503,22 +515,22 @@
 </tr>
 <tr>
 <td>ctrl+g</td>
-<td>라인으로 이동 ...</td>
+<td>행으로 이동</td>
 <td>workbench.action.gotoLine</td>
 </tr>
 <tr>
 <td>ctrl+p</td>
-<td>파일로 이동 ..., 빠른 열기</td>
+<td>빠른 열기, 파일로 이동</td>
 <td>workbench.action.quickOpen</td>
 </tr>
 <tr>
 <td>ctrl+shift+o</td>
-<td>기호로 이동 ...</td>
+<td>기호로 이동</td>
 <td>workbench.action.gotoSymbol</td>
 </tr>
 <tr>
 <td>ctrl+shift+m</td>
-<td>쇼 문제</td>
+<td>오류 보기</td>
 <td>workbench.actions.view.problems</td>
 </tr>
 <tr>
@@ -538,12 +550,12 @@
 </tr>
 <tr>
 <td>ctrl+shift+Tab</td>
-<td>편집기 그룹 기록 탐색</td>
+<td>편집기 기록 탐색</td>
 <td>workbench.action.openPreviousRecentlyUsedEditorInGroup</td>
 </tr>
 <tr>
 <td>alt+왼쪽</td>
-<td>돌아 가기</td>
+<td>뒤로 이동</td>
 <td>workbench.action.navigateBack</td>
 </tr>
 <tr>
@@ -553,7 +565,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">편집자 창 관리<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_5">에디터/윈도우 관리<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -565,7 +577,7 @@
 <tbody>
 <tr>
 <td>ctrl+shift+n</td>
-<td>새창</td>
+<td>새창 열기</td>
 <td>workbench.action.newWindow</td>
 </tr>
 <tr>
@@ -584,7 +596,7 @@
 <td>workbench.action.closeFolder</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>편집기 그룹 사이주기</td>
 <td>workbench.action.navigateEditorGroups</td>
 </tr>
@@ -595,22 +607,22 @@
 </tr>
 <tr>
 <td>ctrl+1</td>
-<td>첫 번째 편집기 그룹에 초점 맞추기</td>
+<td>첫번째 편집기 그룹에 초점 맞추기</td>
 <td>workbench.action.focusFirstEditorGroup</td>
 </tr>
 <tr>
 <td>ctrl+2</td>
-<td>두 번째 편집기 그룹에 초점 맞추기</td>
+<td>두번째 편집기 그룹에 초점 맞추기</td>
 <td>workbench.action.focusSecondEditorGroup</td>
 </tr>
 <tr>
 <td>ctrl+3</td>
-<td>세 번째 편집기 그룹에 초점 맞추기</td>
+<td>세번째 편집기 그룹에 초점 맞추기</td>
 <td>workbench.action.focusThirdEditorGroup</td>
 </tr>
 <tr>
 <td>ctrl+k ctrl+왼쪽</td>
-<td>왼쪽의 편집기 그룹에 초점 맞추기</td>
+<td>왼쪽 편집기 그룹에 초점 맞추기</td>
 <td>workbench.action.focusPreviousGroup</td>
 </tr>
 <tr>
@@ -625,7 +637,7 @@
 </tr>
 <tr>
 <td>ctrl+shift+PageDown</td>
-<td>편집기 오른쪽으로 이동</td>
+<td>오른쪽으로 편집기 이동</td>
 <td>workbench.action.moveEditorRightInGroup</td>
 </tr>
 <tr>
@@ -635,7 +647,7 @@
 </tr>
 <tr>
 <td>ctrl+k 오른쪽</td>
-<td>활성 편집기 그룹을 오른쪽으로 이동하십시오.</td>
+<td>활성 편집기 그룹을 오른쪽으로 이동</td>
 <td>workbench.action.moveActiveEditorGroupRight</td>
 </tr>
 <tr>
@@ -662,7 +674,7 @@
 <tbody>
 <tr>
 <td>ctrl+n</td>
-<td>새 파일</td>
+<td>새탭 열기</td>
 <td>workbench.action.files.newUntitledFile</td>
 </tr>
 <tr>
@@ -691,7 +703,7 @@
 <td>workbench.action.closeActiveEditor</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>기타 닫기</td>
 <td>workbench.action.closeOtherEditors</td>
 </tr>
@@ -701,17 +713,17 @@
 <td>workbench.action.closeEditorsInGroup</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>다른 그룹 닫기</td>
 <td>workbench.action.closeEditorsInOtherGroups</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>왼쪽에서 왼쪽 그룹 닫기</td>
 <td>workbench.action.closeEditorsToTheLeft</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>그룹을 오른쪽으로 닫기</td>
 <td>workbench.action.closeEditorsToTheRight</td>
 </tr>
@@ -747,16 +759,16 @@
 </tr>
 <tr>
 <td>ctrl+kr</td>
-<td>Windows에서 활성 파일 공개</td>
+<td>현재 파일 탐색기로 열기</td>
 <td>workbench.action.files.revealActiveFileInWindows</td>
 </tr>
 <tr>
 <td>ctrl+ko</td>
-<td>새 창에 열린 파일 표시</td>
+<td>현재 파일 새 창에 열기</td>
 <td>workbench.action.files.showOpenedFileInNewWindow</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>열린 파일 비교</td>
 <td>workbench.files.action.compareFileWith</td>
 </tr>
@@ -829,12 +841,12 @@
 </tr>
 <tr>
 <td>ctrl+shift+x</td>
-<td>광고 확장 표시</td>
+<td>확장 표시</td>
 <td>workbench.view.extensions</td>
 </tr>
 <tr>
 <td>ctrl+shift+u</td>
-<td>출력보기</td>
+<td>출력 보기</td>
 <td>workbench.action.output.toggleOutput</td>
 </tr>
 <tr>
@@ -844,7 +856,7 @@
 </tr>
 <tr>
 <td>ctrl+shift+c</td>
-<td>새 명령 프롬프트 열기</td>
+<td>새 프롬프트 열기</td>
 <td>workbench.action.terminal.openNativeConsole</td>
 </tr>
 <tr>
@@ -854,7 +866,7 @@
 </tr>
 <tr>
 <td>ctrl+kv</td>
-<td>측면에 미리보기 열기</td>
+<td>마크다운 측면에 미리보기</td>
 <td>markdown.showPreviewToSide</td>
 </tr>
 <tr>
@@ -942,7 +954,7 @@
 <td>workbench.action.openGlobalSettings</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>작업 공간 설정 열기</td>
 <td>workbench.action.openWorkspaceSettings</td>
 </tr>
@@ -952,7 +964,7 @@
 <td>workbench.action.openGlobalKeybindings</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>사용자 스니펫 열기</td>
 <td>workbench.action.openSnippets</td>
 </tr>
@@ -962,7 +974,7 @@
 <td>workbench.action.selectTheme</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>디스플레이 언어 구성</td>
 <td>workbench.action.configureLocale</td>
 </tr>
@@ -1030,7 +1042,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_11">할 일 목록<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h2 id="_11">작업주자 목록<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1046,9 +1058,51 @@
 <td>workbench.action.tasks.build</td>
 </tr>
 <tr>
-<td>할당되지 않은</td>
+<td>할당되지 않음</td>
 <td>테스트 작업 실행</td>
 <td>workbench.action.tasks.test</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_12">확장 프로그램<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>키</th>
+<th>명령</th>
+<th>명령 ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>할당되지 않음</td>
+<td>확장 프로그램 설치</td>
+<td>workbench.extensions.action.installExtension</td>
+</tr>
+<tr>
+<td>할당되지 않음</td>
+<td>설치된 확장 프로그램 표시</td>
+<td>workbench.extensions.action.showInstalledExtensions</td>
+</tr>
+<tr>
+<td>할당되지 않음</td>
+<td>오래된 확장명 표시</td>
+<td>workbench.extensions.action.listOutdatedExtensions</td>
+</tr>
+<tr>
+<td>할당되지 않음</td>
+<td>추천 확장 프로그램보기</td>
+<td>workbench.extensions.action.showRecommendedExtensions</td>
+</tr>
+<tr>
+<td>할당되지 않음</td>
+<td>인기 확장 프로그램 표시</td>
+<td>workbench.extensions.action.showPopularExtensions</td>
+</tr>
+<tr>
+<td>할당되지 않음</td>
+<td>모든 확장 기능 업데이트</td>
+<td>workbenc</td>
 </tr>
 </tbody>
 </table>
@@ -1059,8 +1113,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../git/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../guide/" class="btn btn-neutral" title="가이드"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href=".." class="btn btn-neutral" title="시작"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1086,8 +1142,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../guide/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../git/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

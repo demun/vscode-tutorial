@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Git - Visual Studio Code tutorial</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Git";
+    var mkdocs_page_input_path = "git.md";
+    var mkdocs_page_url = "/git/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Visual Studio Code tutorial</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">시작</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../shortcuts/">단축키</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Git</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#git">git</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">최초설정</a></li>
+        
+            <li><a class="toctree-l3" href="#vscode-git">vscode 에서 git 사용하기</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../debug/">Debug</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../task/">Task</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Visual Studio Code tutorial</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Git</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="git">git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<p>vscode 는 git 을 사용하기 위한 기능이 기본적으로 추가되어 있습니다.</p>
+<p>git 을 사용하려면 먼저 <a href="https://github.com">https://github.com</a> 에 회원가입이 되어 있어야하고, <a href="https://git-scm.com/download/win">git-scm</a> 에서 git 프로그램을 다운로드하고 설치해야 합니다.</p>
+<p>가입이 안되어 있다면 <a href="https://github.com">https://github.com</a> 에 회원가입을 하고 프로그램도 설치하시길 바랍니다.</p>
+<p>설치가 되어 있다고 가정하고 vscode 에서 git 을 사용하는 방법을 알아보겠습니다.</p>
+<h2 id="_1">최초설정<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>git 에 내이름과 이메일등을 먼저 등록하는 것이 좋습니다. vscode 에서 git 을 사용하다보면 나중에 이름과 이메일을 물어옵니다. 그러니 먼저 설정해둡니다.</p>
+<p>이름과 이메일은 최초 한번만 설정하면 됩니다.</p>
+<p>콘솔창을 열고 아래의 내용을 본인의 것으로 바꿔주세요. </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="go">git config --global user.name &quot;이름&quot; </span>
+<span class="go">git config --global user.email &quot;이메일&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="vscode-git">vscode 에서 git 사용하기<a class="headerlink" href="#vscode-git" title="Permanent link">&para;</a></h2>
+<p>git 을 사용하려면 vscode 에서 지원하는 터미널에서 명령어를 입력해서 진행해도 똑같이 사용할 수 있습니다.</p>
+<p>하지만 여기서는 그런 명령어없이 간단하게 클릭만으로 저장소를 사용하는 방법을 알려드립니다.</p>
+<p>여기서는 테스트를 위해서 저장소를 생성하고 클론하는 방향으로 진행해보겠습니다. 저장소가 있는경우 클론부터 진행하면 됩니다.</p>
+<p>먼저 저장소를 생성합니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0030.jpg" /></p>
+<p>vscode-git 이라는 저장소를 만들었습니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0031.jpg" /></p>
+<p>저장소 주소를 복사합니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0032.jpg" /></p>
+<p><code>ctrl+shift+p</code> 를 눌러 명령팔렛트를 열어서 <code>git clone</code> 를 누릅니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0033.jpg" /></p>
+<p>저장소 주소를 물어오고, 복사한 주소를 넣습니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0034.jpg" /></p>
+<p>로컬컴퓨터의 위치를 물어오면 적당한 곳을 지정해줍니다. </p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0035.jpg" /></p>
+<p>그럼 아래처럼 알림이 뜨고, 리포지토리 열기를 클릭합니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0036.jpg" /></p>
+<p>vscode 가 재시작되고 로컬의 저장소가 열립니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0037.jpg" /></p>
+<p>readme 파일을 수정해봅니다. 그럼 자동으로 git 부분에 수정한부분이 표시됩니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0038.jpg" /></p>
+<p>커밋 메시지를 적고, <code>ctrl+Enter</code> 을 눌러도 되고, 상단에 커밋아이콘을 클릭해도 됩니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0039.jpg" /></p>
+<p>알림창이 뜨고, 예 또는 항상을 클릭합니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0040.jpg" /></p>
+<p>이부분까지 하면 git 사이트에 커밋메시지가 보입니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0041.jpg" /></p>
+<p>상단에 메뉴부분을 클릭하면 확장메뉴가 나오는데 푸시를 클릭합니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0042.jpg" /></p>
+<p>이부분에서 위에서의 최초설정이 안되어 있으면 이름과 이메일을 물어옵니다.</p>
+<p>하지만 설정을 했다면 바로 진행됩니다.</p>
+<p>저장소에 보면 수정한 부분이 반영이 되어 있습니다.</p>
+<p><img alt="vscode 에서 git 사용하기" src="../img/0043.jpg" /></p>
+<p>지금은 수정사항이 없으니 커밋하고 푸시를 했지만, 여러번 반복하다보면 커밋 -&gt; 풀 -&gt; 푸시 순서로 해야합니다.</p>
+<h3 id="_2">변경점 보기<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>수정된 파일을 클릭하면 수정된 부분을 볼 수 있습니다.</p>
+<p><code>1</code>번을 클릭하면 우측에 새로 파일이 나타나고, <code>2</code>, <code>3</code>번처럼 변경된 부분이 보입니다.</p>
+<p><img alt="변경점 보기" src="../img/0044.jpg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../debug/" class="btn btn-neutral float-right" title="Debug">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../shortcuts/" class="btn btn-neutral" title="단축키"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../shortcuts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../debug/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
