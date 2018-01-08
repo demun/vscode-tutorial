@@ -4,4 +4,4 @@
 
 https://demun.github.io/vscode-tutorial
 
-![소개](./img/0078.jpg)
+![소개](./docs/img/0078.jpg)
