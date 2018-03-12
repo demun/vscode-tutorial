@@ -1,4 +1,4 @@
-site_name: Visual Studio Code tutorial
+site_name: "Visual Studio Code tutorial"
 
 pages: 
   - 시작: index.md
