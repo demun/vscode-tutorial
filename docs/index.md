@@ -215,7 +215,7 @@ vscode 는 하단에 터미널을 통해 명령을 실행할 수도 있습니다
 
 ![마크다운 미리보기](./img/0024.gif)
 
-<!-- 
+
 # 스니펫
 
 vscode 는 기본적인 스니펫을 지원합니다. 또한 언어별로 확장기능을 통해 더 많은 스니펫을 지원합니다.
@@ -272,7 +272,7 @@ javascript 를 입력하면 아래처럼 해당 파일이 선언됩니다.
 
 ![스니펫](./img/0093.jpg)
 
-스니펫의 더 많은 정보는 [https://code.visualstudio.com/docs/editor/userdefinedsnippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) 에서 볼 수 있습니다. -->
+스니펫의 더 많은 정보는 [https://code.visualstudio.com/docs/editor/userdefinedsnippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) 에서 볼 수 있습니다.
 
 
 # emmet
